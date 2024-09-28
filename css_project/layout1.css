@@ -1,0 +1,51 @@
+
+header, .nav,.content,.sidebar, .footer
+{
+    background-color: blanchedalmond;
+    margin : 10px; 
+}
+
+header 
+{
+    text-align: center;
+}
+
+.body-content
+{
+    display: flex;
+    margin;
+}
+
+ul, ol
+{
+    list-style-type: none;
+   padding-left: 0px;
+   margin: ;
+}
+
+
+.nav 
+{
+    
+    display: block;
+    text-align: center;
+    margin:10px;
+}
+
+.content 
+{
+    
+    text-align: left;
+    margin:10px;
+}
+
+.sidebar 
+{
+    
+    margin:10px;
+}
+
+.footer 
+{
+    text-align: center;
+}
