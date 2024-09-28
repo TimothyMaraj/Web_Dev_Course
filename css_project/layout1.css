@@ -13,7 +13,7 @@ header
 .body-content
 {
     display: flex;
-    margin;
+    margin:10px;
 }
 
 ul, ol
