@@ -1,5 +1,11 @@
+/* Background Color for each class */
+header
+{
+    background-color: blanchedalmond;
+    margin : 10px; 
+}
 
-header, .nav,.content,.sidebar, .footer
+.nav,.content,.sidebar, .footer
 {
     background-color: blanchedalmond;
     margin : 10px; 
@@ -20,21 +26,23 @@ ul, ol
 {
     list-style-type: none;
    padding-left: 0px;
-   margin: ;
+  
 }
 
 
 .nav 
 {
     
-    display: block;
+    display: flex;
     text-align: center;
     margin:10px;
+    order: 1; 
+    /* order tag is a cheat code */
 }
 
 .content 
 {
-    
+    order : 2; 
     text-align: left;
     margin:10px;
 }
@@ -43,6 +51,7 @@ ul, ol
 {
     
     margin:10px;
+    order: 3; 
 }
 
 .footer 
