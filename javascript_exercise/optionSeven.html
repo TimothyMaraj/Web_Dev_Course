@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function generateJSON()
+        {
+            user_keytype=document.getElementById("input_keyboard_type").value;
+            user_keyboard=document.getElementById("input_keyboard_switches").value;
+            user_keycap=document.getElementById("input_keycap_type").value;
+
+            json_object=
+            {
+                keytype : user_keytype,
+                keyboard : user_keyboard,
+                keycap : user_keycap
+            };
+
+
+            json_string = JSON.stringify(json_object);
+            document.getElementById("json_box").value = json_string;    
+
+
+        }
+   </script>
+
+
+
+    <h1>Option 7 JSON request body from form controls</h1>
+
+    <form>
+        <label for="state"> Keyboard Type (Like Mechcanical etc):  </label>
+        <input type = "text" id="input_keyboard_type" name ="keyboard_type" value="mech"> <br><br>
+        <label for="state"> Type of Keyboard Switches (Like Red,Brown,Blue):  </label>
+        <input type = "text" id="input_keyboard_switches" name="keyboard_switches" value="brown"> <br><br>
+
+        <label for="state"> Keycap type (ex: mx cherry):  </label>
+        <input type = "text" id="input_keycap_type" name ="keycap_type" value="mx cherry"> <br><br>
+        <input type="button" value="Submit" onclick=generateJSON()> <input type="text" id="json_box" name="json_box" >
+
+        
+
+    </form>
+
+    
+</body>
+
+
+</html>
