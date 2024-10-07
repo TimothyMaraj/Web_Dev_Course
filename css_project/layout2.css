@@ -16,9 +16,9 @@ header
     grid-column: 2;
 }
 .content {
-    display: grid;  /* Apply grid to the content div */
-    grid-template-columns: repeat(2, 1fr);  /* Creates 2 equal-width columns */
-    gap: 10px;  /* Adds space between the grid items */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
     grid-column: 1;
     grid-row: 2;
 }
