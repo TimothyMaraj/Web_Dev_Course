@@ -1,26 +1,26 @@
-
-
-
 header 
 {
     text-align: left;
-    background-color: green; 
+    background-color: cyan;
 }
 
-.body-content *
-{
-    display: flex;
-}
-.nav *
+.nav div, ul
 {
     order:1; 
-    background-color: green; 
+    background-color: cyan;
     width:100%; 
-    display: flex;
-    flex-direction: column;
+    
 }
 
+.nav ul li
+{
+    list-style-type: disc; 
+}
 
+#Nav_Title 
+{
+    list-style-type: none;
+}
 
 .content  
 {
@@ -29,32 +29,44 @@ header
     flex-direction: column;
      
 }
+
+.content p {
+    margin-top: 0;      
+    margin-bottom: 1px; 
+}
+
 #paragraph_one 
 {
     order:1; 
-    background-color: green;
+    background-color: cyan;
 }
 
 #paragraph_two 
 {
     order:2; 
-    background-color: green;
+    background-color: cyan;
 }
 
 #paragraph_three 
 {
     order:3; 
-    background-color: green;
+    background-color: cyan;
 }
+
 .sidebar * 
 {
     order:3; 
-    background-color: green; 
+    background-color: cyan;
     width:100%; 
+    margin-right: 10px; ;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
+
 
 .footer  
 {
-    background-color: green;
+    background-color: cyan;
     margin: 10px;
 }

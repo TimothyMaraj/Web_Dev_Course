@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="layout2.css">
+    <link id="layout" rel="stylesheet" href="layout1.css">
 </head>
 
 <header class="header">
@@ -10,6 +10,9 @@
     
     <h3>Sudo Mod Pizza
     </h3>
+    <button onclick="switchLayout()">Switch Layout</button>
+
+    
 </header>
 
 <!--
@@ -21,10 +24,27 @@ Styled with the order tag
 
 <body>
 
+    <script>
+        let clickCount = 0;
+
+        function switchLayout() {
+            clickCount++;
+            if (clickCount === 1) {
+                document.getElementById('layout').href = 'layout2.css';
+            } else if (clickCount === 2) {
+                document.getElementById('layout').href = 'layout3.css';
+            } else if (clickCount === 3) {
+                document.getElementById('layout').href = 'layout1.css';
+                clickCount = 0;  // 
+            }
+        }
+    </script>
+
+
     <div class="body-content">
         <div class="nav">
         <ul>
-            <li> Nav Bar</li>
+            <li id="Nav_Title"> Nav Bar</li>
             <li id="link_one"><a href="https://www.gnu.org/software/bash/">Bash_Documents</a></li>
             <li id="link_two"><a href="https://ohmyz.sh/">Terminals</a></li>
             <li id="link_three"><a href="https://overthewire.org/wargames/bandit/">Pratice_with_the_terminal</a></li>
